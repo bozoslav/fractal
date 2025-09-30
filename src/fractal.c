@@ -38,9 +38,9 @@ static void color_pixel(unsigned char *pixel, int iter, int max_iter)
     {
         double log_iter = log((double)iter);
 
-        double r = 0.5 * (1 + cos(0.3 * log_iter));
+        double b = 0.5 * (1 + cos(0.3 * log_iter));
         double g = 0.5 * (1 + sin(0.3 * log_iter + 2.0));
-        double b = 0.5 * (1 + sin(0.3 * log_iter + 4.0));
+        double r = 0.5 * (1 + sin(0.3 * log_iter + 4.0));
 
         pixel[0] = (unsigned char)(255 * r);
         pixel[1] = (unsigned char)(255 * g);
