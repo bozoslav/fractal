@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     int width = 7680, height = 4320;
     double zoom = 1.2, center_x = 0.0, center_y = 0.0;
     double c_re = -0.7, c_im = 0.27015;
-    int max_iter = 100000;
+    int max_iter = 1000000;
 
     unsigned char *image = (unsigned char *)malloc(3 * width * height);
 
